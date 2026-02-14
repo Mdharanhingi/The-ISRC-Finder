@@ -6,11 +6,10 @@ from datetime import datetime
 from fuzzywuzzy import fuzz
 
 # File paths
-INPUT_PATH = r"C:\Users\IT Support\Pictures\Book3.csv"
-OUTPUT_PATH = r"C:\Users\IT Support\Pictures\song_metadata_2025only.csv"
-UNMATCHED_PATH = r"C:\\Users\\IT Support\\Pictures\\unmatched_records.csv"
-#OUTPUT_PATH = r"C:\\Users\\IT Support\\Pictures\\updated_songs_with_isrc.csv"
-LOG_PATH = r"C:\\Users\\IT Support\\Pictures\\isrc_fetch_log.txt"
+INPUT_PATH = r"C:\your\file\Path\example.csv"
+OUTPUT_PATH = r"C:\your\file\path\updated_songs_with_isrc.csv"
+UNMATCHED_PATH = r"C:\\your\\file\\path\\unmatched_records.csv"
+LOG_PATH = r"C:\\your\\file\\path\\isrc_fetch_log.txt"
 
 # Start logging
 log_lines = []
@@ -150,3 +149,4 @@ with open(LOG_PATH, "w", encoding="utf-8") as f:
     f.write("\n".join(log_lines))
 
 print(f"Log saved to: {LOG_PATH}")
+
